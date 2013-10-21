@@ -13,7 +13,7 @@ In order to have Wordpress work on the IBM BlueMix Platform, do the following:
 </code></pre>
 4. Followed by ....<pre><code>curl https://api.wordpress.org/secret-key/1.1/salt/ >> wp-salt.php
 </code></pre>
-5. Replace the **_wp-config.php_** with the one in attachments for this page.  If you've searched on how to set up Wordpress with Cloud Foundry v1 you'll notice that
+5. Replace the **_wp-config.php_** with the one in this github repository.  If you've searched on how to set up Wordpress with Cloud Foundry v1 you'll notice that
  * Level of **mySQL** has changed (5.1 -> 5.5)
  * Cloud Foundry host variable name has changed (hostname -> host)
  * **DB_HOST** variable requires the port now.
