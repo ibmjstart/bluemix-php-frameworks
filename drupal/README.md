@@ -9,7 +9,7 @@ In order to have Drupal work on the IBM BlueMix Platform, do the following:
 
 1. Download a current stable version of Druapl from [https://drupal.org/index.html](https://drupal.org/index.html).
 2. Untar or unzip the download (e.g. tar -xzf drupal-7.23.tar.gz) and change to the base directory (e.g. drupal-7.23).
-3. From the base directory, copy the settings.php file found in [this repository](https://github.com/ibmjstart/bluemix-php-frameworks/tree/master/drupal) into the folder "drupal-7.23/sites/default"<pre><code>bash-3.2$ cp settings.php drupal-7.23/sites/default</code></pre>
+3. From the base directory, copy the settings.php file found in [this repository](https://github.com/ibmjstart/bluemix-php-frameworks/tree/master/drupal) into the folder "<base_directory>/sites/default"<pre><code>bash-3.2$ cp settings.php drupal-7.23/sites/default</code></pre>
 4. Using the cf gem, install Drupal into BlueMix with the Heroku PHP buildpack.
 <pre><code>cf push --buildpack https://github.com/heroku/heroku-buildpack-php.git</code></pre>
    **NOTE**:  During the application install choose to bind to a mySQL database service.
